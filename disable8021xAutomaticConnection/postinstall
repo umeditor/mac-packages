@@ -1,0 +1,6 @@
+#!/bin/sh
+
+/bin/launchctl unload /Library/LaunchAgents/org.povertyactionlab.disable8021xAutomaticConnection.plist
+/bin/launchctl load /Library/LaunchAgents/org.povertyactionlab.disable8021xAutomaticConnection.plist
+
+exit 0
