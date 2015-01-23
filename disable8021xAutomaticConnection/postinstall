@@ -1,6 +1,12 @@
 #!/bin/sh
 
-/bin/launchctl unload /Library/LaunchAgents/org.povertyactionlab.disable8021xAutomaticConnection.plist
-/bin/launchctl load /Library/LaunchAgents/org.povertyactionlab.disable8021xAutomaticConnection.plist
+JOB_LABEL="org.povertyactionlab.disable8021xAutomaticConnection"
+
+# Reload agent if it's already loaded
+if /bin/launchctl list ${JOB_LABEL} >/dev/null 2>&1; then
+  /bin/launchctl unload ${JOB_LABEL}.plist
+fi
+
+/bin/launchctl load ${JOB_LABEL}.plist
 
 exit 0
