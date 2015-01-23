@@ -3,6 +3,7 @@ include /usr/local/share/luggage/luggage.make
 
 TITLE=disable_802.1x_Automatic_Connection
 VERSION=1.0
+PACKAGE_VERSION=1.0
 REVERSE_DOMAIN=org.povertyactionlab
 
 
