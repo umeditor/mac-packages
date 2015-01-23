@@ -2,7 +2,7 @@ USE_PKGBUILD=1
 include /usr/local/share/luggage/luggage.make
 
 TITLE=Disable802.1xAutomaticConnection
-VERSION=1.1
+VERSION=1.1.1
 PACKAGE_VERSION=$(VERSION)
 REVERSE_DOMAIN=org.povertyactionlab
 
