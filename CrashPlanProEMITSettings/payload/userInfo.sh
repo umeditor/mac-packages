@@ -27,7 +27,7 @@ startDesktop=true
 CP_USER_HOME="$HOME"
 user=`basename $CP_USER_HOME`
 userGroup=`id -gn "$user"`
-CP_USER_NAME="$user"
+CP_USER_NAME=""
 
 
 # 
